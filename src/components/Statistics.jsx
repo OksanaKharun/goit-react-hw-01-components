@@ -1,7 +1,7 @@
 const Statistics =  function ({ title,stats }) {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2 className="title">Upload stats</h2>}
 
       <ul className="stat-list">
         {stats.map(({ id, label, percentage }) => {
